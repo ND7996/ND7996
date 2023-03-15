@@ -1,0 +1,8 @@
+readlib  ./ff/qoplsaa.lib
+readlib  ./ff/substrate/PRX/PRX.lib
+readprm  ./ff/qoplsaa_all.prm
+readpdb  ./ff/substrate/PRX/PRX.pdb
+maketop  PRX.top
+writetop PRX.top
+writepdb PRX2.pdb y
+quit
