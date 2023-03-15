@@ -1,0 +1,34 @@
+# Generated with QTools, version 0.7.0
+# Date: Tue Jan 18 18:23:58 2022
+# CWD: /home/42ax/work/gas/02-relax
+# Cmdline: /home/42ax/bin/qtools/qscripts-cli/q_genrelax.py ./input/genrelax.proc --top ../01-prepare/pef_sec.top --pdb ../01-prepare/pef_sec.pdb --fep ../01-prepare/fep/pef_s1.fep --rs ./input/run_relax_q.sh --outdir relax_001
+[md]
+steps                                           20000
+random_seed                             98457654321
+temperature                                     0.1
+stepsize                                       0.05
+bath_coupling                                   100
+initial_temperature                             0.1
+lrf                                              on
+shake_hydrogens                                 off
+
+[cut-offs]
+q_atom                                           99
+
+[intervals]
+non_bond                                         30
+output                                          100
+trajectory                                      100
+
+[files]
+topology                                PRX.top
+final                                  relax_01.re
+trajectory                            relax_01.dcd
+fep                                      pef_s1.fep
+
+[lambdas]
+0.90  0.10
+
+[sequence_restraints]
+1      28     100.0  0      0     
+29     51     100.0  0      0     
