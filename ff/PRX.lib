@@ -1,10 +1,10 @@
 #
 {PRX}
     [atoms]
-        1  O1     PRX.O1   -0.469903
-        2  O2     PRX.O2   -0.470841    
-        3  H1     PRX.H1    0.470128 
-        4  H2     PRX.H2    0.470615  
+        1  O1     PRX.O   -0.47
+        2  O2     PRX.O   -0.47    
+        3  H1     HO    0.47 
+        4  H2     HO    0.47  
     [bonds]
         H1    O1
         O1    O2

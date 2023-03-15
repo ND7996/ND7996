@@ -1,0 +1,9 @@
+readlib  ../ff/qoplsaa.lib           
+readlib  ../ff/PRX.lib
+readprm  ../ff/qoplsaa_all.prm
+readpdb  PRX.pdb
+boundary sphere 0. 0. 0. 10.
+maketop  PRX.top
+writetop PRX.top
+writepdb PRX2.pdb y
+quit
