@@ -1,4 +1,4 @@
-readlib  ./ff/qoplsaa.lib
+readlib  ./ff/qoplsaa.lib           
 readlib  ./ff/substrate/PRX/PRX.lib
 readprm  ./ff/qoplsaa_all.prm
 readpdb  ./ff/substrate/PRX/PRX.pdb
