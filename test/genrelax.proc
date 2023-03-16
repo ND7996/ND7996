@@ -1,0 +1,89 @@
+#######################################################
+{SCRIPT_VARS}
+#######################################################
+PEF_A	      $1.O1$      $1.H12$       0.1  0    2
+PEF_B	      $1.O1$      $1.H12$       0.5  0    0
+PEF_C	      $1.O1$      $1.H12$      10.0  0    0
+PEF_D	      $1.O1$      $1.H12$     100.0  0    0
+SEC_A	      $2.CAY$     $2.HZ3$       0.1  0    2
+SEC_B	      $2.CAY$     $2.HZ3$       0.5  0    0
+SEC_C 	      $2.CAY$     $2.HZ3$      10.0  0    0
+SEC_D	      $2.CAY$     $2.HZ3$     100.0  0    0
+#######################################################
+{GENERAL}
+#######################################################
+[MD]
+stepsize                   1
+temperature              300
+bath_coupling            100  
+lrf                       on
+
+[cut-offs]
+q_atom                    99
+
+[lambdas]
+0.90  0.10
+
+[intervals]
+non_bond               30
+output                 100
+trajectory             100
+
+[sequence_restraints]
+PEF_D
+SEC_D
+#######################################################
+{STEPS}
+#######################################################
+[MD]
+steps                     200
+stepsize                  0.05
+initial_temperature       0.1
+temperature               0.1
+random_seed               98457654321
+shake_hydrogens           off
+_______________________________________________________
+[MD]
+steps                     200
+temperature                 10
+_______________________________________________________
+[MD]
+steps                     200
+temperature                 50
+_______________________________________________________
+[MD]
+steps                     200
+temperature                100
+_______________________________________________________
+[MD]
+steps                     200
+temperature                200
+_______________________________________________________
+[MD]
+steps                    2000
+
+[intervals]
+output                   200
+trajectory               200
+_______________________________________________________
+[MD]
+steps                   2000
+
+[sequence_restraints]
+PEF_C
+SEC_C
+
+[intervals]
+output                   200
+trajectory               200
+_______________________________________________________
+[MD]
+steps                   2000
+
+[sequence_restraints]
+PEF_B
+SEC_B
+
+[intervals]
+output                   200
+trajectory               200
