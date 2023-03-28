@@ -1,0 +1,11 @@
+readlib  /home/nayanika/OneDrive/Thesis/EVB/GPX/01-prepare/ff/product/WAT/qoplsaa.lib
+readprm  /home/nayanika/OneDrive/Thesis/EVB/GPX/01-prepare/ff/product/WAT/qoplsaa_all.prm
+readpdb  /home/nayanika/OneDrive/Thesis/EVB/GPX/01-prepare/ff/product/WAT/WAT.pdb
+boundary sphere 0. 0. 0. 10.
+maketop  WAT.top
+writetop WAT.top
+writepdb WAT2.pdb y
+quit
+
+
+
