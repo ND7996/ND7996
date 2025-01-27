@@ -1,7 +1,13 @@
+# 👩‍🔬 Researcher in Protein Engineering & Structural Biology
 
-# Hi, I am Nayanika !
+Hi there! 👋 I’m a researcher specializing in **Protein Engineering**, **Structural Biology**, **Protein Illustration**, and **Computational Chemistry**, with a focus on the evolutionary and epistatic analysis of the **mutational landscape** in **Glutathione Peroxidase Protein**.
 
-I am a researcher specializing in protein engineering, structural biology, protein illustration, and computational chemistry, with a focus on the evolutionary and epistatic analysis of the mutational landscape in Glutathione Peroxidase Protein. Driven by a passion for connecting science with art, I leverage my experience in editorial processes, scientific and non-scientific presentations, and collaborative research to foster effective communication and inspire innovation across disciplines.
-Feel free to connect !
+🌟 **Passionate about**:
+- Connecting science with art 🎨
+- Collaborative research 🔬
+- Communicating science effectively through both scientific and non-scientific presentations 🗣️
 
+I believe in fostering innovation through interdisciplinary connections, and I leverage my experience in editorial processes and presentations to inspire others across diverse fields.
+
+Feel free to connect! 💬
 
