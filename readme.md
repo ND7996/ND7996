@@ -6,7 +6,7 @@ Hi there! 👋 I'm a researcher specializing in **Protein Engineering**, **Struc
 - Connecting **science with art** 🎨  
 - Collaborative **research** 🔬  
 - Effectively **communicating science** through both **scientific** and **non-scientific** presentations 🗣️
-- 
+
 🔗 **To know more about me**: [Linktree](https://linktr.ee/nd_7)
 
 I believe in fostering innovation through **interdisciplinary connections** so feel free to connect! 💬
