@@ -6,12 +6,13 @@ Directed Evolution of Enzymes 🔬
 Protein Illustration 🎨
 Computational Chemistry 💻
 
-🤝 Collaborative Research
+🤝 
 I believe in the power of collaboration and am always eager to bring together diverse ideas and expertise to solve interdisciplinary challenges in research.
 
-🗣️ Science Communication
+🗣️ 
 Effective communication is key to sharing scientific discoveries. I’m passionate about presenting research in ways that resonate with both scientific 🔬 and non-scientific audiences, sparking curiosity and engagement.
 
+🎨
 I use creative protein illustrations to transform complex data into visually impactful representations, making science more engaging and accessible for all.
 
 **I believe in fostering innovation through interdisciplinary connections 🌐. By blending scientific research with artistic expression and effective communication, I aim to inspire new ideas and push the boundaries of what’s possible in enzyme evolution and design**
