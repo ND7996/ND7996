@@ -1,7 +1,10 @@
 👩‍🔬 Hello! 👋
 
 🌟 About Me
-I’m a PhD Student specializing in Directed Evolution of Enzymes 🔬, Protein Illustration 🎨, and Computational Chemistry 💻, with a focus on the evolutionary 🌱 and epistatic analysis 🔄 of the mutational landscape 🧬 in Glutathione Peroxidase Protein.
+I’m a PhD Student specializing in 
+**Directed Evolution of Enzymes 🔬
+Protein Illustration 🎨
+Computational Chemistry 💻**
 
 I'm Passionate About
 🎨 Merging Science with Art
