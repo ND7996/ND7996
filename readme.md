@@ -1,6 +1,6 @@
 👩‍🔬 Hello! 👋
 
-Specializations
+I am a PHD Student specializing in
 
 Directed Evolution of Enzymes 🔬
 Protein Illustration 🎨
