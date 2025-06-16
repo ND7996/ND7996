@@ -13,4 +13,4 @@ Computational Chemistry 💻
 🌐 Let’s Connect!
 I’m always excited to connect with fellow researchers, creatives, and anyone passionate about the intersection of science, art, and innovation 💡. Feel free to reach out if you’re interested in collaborating or discussing new ideas! 💬
 
-🔗 **To know more about me**: [Linktree](https://linktr.ee/nd_7)
+
