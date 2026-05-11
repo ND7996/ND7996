@@ -4,7 +4,7 @@
 
 <br/>
 
-Hey! I'm a PhD student working at the intersection of molecular biology, computational chemistry, and scientific illustration.
+Hey! I'm a PhD student working at the intersection of computational and theoretical chemistry, and scientific illustration.
 
 - 🔬 &nbsp;Engineering enzymes through **directed evolution**
 - 💻 &nbsp;Using **molecular modelling** to guide experimental design
