@@ -1,0 +1,297 @@
+<svg viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" width="900" height="280">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&amp;family=JetBrains+Mono:wght@300;400&amp;display=swap');
+
+      .bg { fill: #0a0e12; }
+      .grid-line { stroke: #1a2535; stroke-width: 0.5; }
+      .helix-strand-a { fill: none; stroke: #00c9a7; stroke-width: 2; opacity: 0.85; }
+      .helix-strand-b { fill: none; stroke: #f59e0b; stroke-width: 2; opacity: 0.85; }
+      .helix-rung { stroke: #334155; stroke-width: 1.2; }
+      .molecule { fill: none; stroke-width: 1.2; }
+
+      .name-text {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 52px;
+        font-weight: 600;
+        fill: #f1f5f9;
+        letter-spacing: 3px;
+      }
+      .title-text {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: italic;
+        fill: #94a3b8;
+        letter-spacing: 2px;
+      }
+      .tag-text {
+        font-family: 'JetBrains Mono', 'Courier New', monospace;
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+      }
+      .divider { stroke: #00c9a7; stroke-width: 1; opacity: 0.6; }
+      .accent-dot { fill: #00c9a7; }
+      .accent-dot-amber { fill: #f59e0b; }
+
+      /* Helix animation */
+      @keyframes helixFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; r: 3; }
+        50% { opacity: 1; r: 5; }
+      }
+      @keyframes pulseAmber {
+        0%, 100% { opacity: 0.2; r: 2.5; }
+        50% { opacity: 0.9; r: 4; }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes lineGrow {
+        from { stroke-dashoffset: 200; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes floatOrb {
+        0%, 100% { transform: translate(0, 0); opacity: 0.15; }
+        33% { transform: translate(4px, -8px); opacity: 0.3; }
+        66% { transform: translate(-4px, 4px); opacity: 0.2; }
+      }
+      @keyframes rungPulse {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 0.7; }
+      }
+      @keyframes scanline {
+        from { transform: translateY(-280px); }
+        to { transform: translateY(280px); }
+      }
+      @keyframes tagFadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .helix-group {
+        animation: helixFloat 6s ease-in-out infinite;
+        transform-origin: 790px 140px;
+      }
+      .orb1 { animation: floatOrb 8s ease-in-out infinite; }
+      .orb2 { animation: floatOrb 11s ease-in-out infinite 2s; }
+      .orb3 { animation: floatOrb 9s ease-in-out infinite 4s; }
+
+      .name-group { animation: fadeIn 0.8s ease-out 0.2s both; }
+      .title-group { animation: fadeIn 0.8s ease-out 0.5s both; }
+      .tags-group { animation: fadeIn 0.8s ease-out 0.8s both; }
+      .line1 {
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation: lineGrow 1s ease-out 0.3s forwards;
+      }
+
+      .rung1 { animation: rungPulse 3s ease-in-out infinite 0s; }
+      .rung2 { animation: rungPulse 3s ease-in-out infinite 0.3s; }
+      .rung3 { animation: rungPulse 3s ease-in-out infinite 0.6s; }
+      .rung4 { animation: rungPulse 3s ease-in-out infinite 0.9s; }
+      .rung5 { animation: rungPulse 3s ease-in-out infinite 1.2s; }
+      .rung6 { animation: rungPulse 3s ease-in-out infinite 1.5s; }
+      .rung7 { animation: rungPulse 3s ease-in-out infinite 1.8s; }
+      .rung8 { animation: rungPulse 3s ease-in-out infinite 2.1s; }
+      .rung9 { animation: rungPulse 3s ease-in-out infinite 2.4s; }
+      .rung10 { animation: rungPulse 3s ease-in-out infinite 2.7s; }
+
+      .node-a1 { animation: pulse 2.5s ease-in-out infinite 0s; }
+      .node-a2 { animation: pulse 2.5s ease-in-out infinite 0.5s; }
+      .node-a3 { animation: pulse 2.5s ease-in-out infinite 1.0s; }
+      .node-a4 { animation: pulse 2.5s ease-in-out infinite 1.5s; }
+      .node-a5 { animation: pulse 2.5s ease-in-out infinite 2.0s; }
+      .node-b1 { animation: pulseAmber 2.5s ease-in-out infinite 0.25s; }
+      .node-b2 { animation: pulseAmber 2.5s ease-in-out infinite 0.75s; }
+      .node-b3 { animation: pulseAmber 2.5s ease-in-out infinite 1.25s; }
+      .node-b4 { animation: pulseAmber 2.5s ease-in-out infinite 1.75s; }
+      .node-b5 { animation: pulseAmber 2.5s ease-in-out infinite 2.25s; }
+
+      .tag1 { animation: tagFadeIn 0.4s ease 0.9s both; }
+      .tag2 { animation: tagFadeIn 0.4s ease 1.1s both; }
+      .tag3 { animation: tagFadeIn 0.4s ease 1.3s both; }
+    </style>
+
+    <!-- Scanline overlay gradient -->
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00c9a7" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00c9a7" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00c9a7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial glow behind helix -->
+    <radialGradient id="helixGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00c9a7" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00c9a7" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Left text area glow -->
+    <radialGradient id="textGlow" cx="30%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0f2435" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0a0e12" stop-opacity="1"/>
+    </radialGradient>
+
+    <clipPath id="clip">
+      <rect width="900" height="280" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="900" height="280" fill="#0a0e12" rx="12"/>
+    <rect width="900" height="280" fill="url(#textGlow)" rx="12"/>
+
+    <!-- Subtle grid -->
+    <g opacity="0.4">
+      <line x1="0" y1="56" x2="900" y2="56" class="grid-line"/>
+      <line x1="0" y1="112" x2="900" y2="112" class="grid-line"/>
+      <line x1="0" y1="168" x2="900" y2="168" class="grid-line"/>
+      <line x1="0" y1="224" x2="900" y2="224" class="grid-line"/>
+      <line x1="180" y1="0" x2="180" y2="280" class="grid-line"/>
+      <line x1="360" y1="0" x2="360" y2="280" class="grid-line"/>
+      <line x1="540" y1="0" x2="540" y2="280" class="grid-line"/>
+      <line x1="720" y1="0" x2="720" y2="280" class="grid-line"/>
+    </g>
+
+    <!-- Corner brackets -->
+    <g stroke="#00c9a7" stroke-width="1.5" fill="none" opacity="0.5">
+      <path d="M16,30 L16,16 L30,16"/>
+      <path d="M870,16 L884,16 L884,30"/>
+      <path d="M16,250 L16,264 L30,264"/>
+      <path d="M870,264 L884,264 L884,250"/>
+    </g>
+
+    <!-- Floating orbs (bg atmosphere) -->
+    <circle class="orb1" cx="650" cy="60" r="80" fill="#00c9a7" opacity="0.04"/>
+    <circle class="orb2" cx="750" cy="200" r="60" fill="#f59e0b" opacity="0.04"/>
+    <circle class="orb3" cx="580" cy="160" r="40" fill="#00c9a7" opacity="0.03"/>
+
+    <!-- Glow behind helix -->
+    <ellipse cx="790" cy="140" rx="110" ry="130" fill="url(#helixGlow)"/>
+
+    <!-- === DNA HELIX (right side) === -->
+    <g class="helix-group">
+      <!-- Strand A (teal) - sine wave -->
+      <path class="helix-strand-a" d="
+        M 700,20
+        C 720,48 760,48 780,75
+        C 800,102 760,102 740,130
+        C 720,158 760,158 780,185
+        C 800,212 760,212 740,240
+        C 720,268 760,268 780,280
+      "/>
+      <!-- Strand B (amber) - opposite sine wave -->
+      <path class="helix-strand-b" d="
+        M 780,20
+        C 760,48 720,48 700,75
+        C 680,102 720,102 740,130
+        C 760,158 720,158 700,185
+        C 680,212 720,212 740,240
+        C 760,268 720,268 700,280
+      "/>
+
+      <!-- Rungs -->
+      <line class="helix-rung rung1"  x1="740" y1="20"  x2="740" y2="20"  stroke="#64748b"/>
+      <line class="helix-rung rung2"  x1="716" y1="47"  x2="764" y2="47"  stroke="#64748b"/>
+      <line class="helix-rung rung3"  x1="714" y1="74"  x2="766" y2="74"  stroke="#64748b"/>
+      <line class="helix-rung rung4"  x1="726" y1="101" x2="754" y2="101" stroke="#64748b"/>
+      <line class="helix-rung rung5"  x1="740" y1="130" x2="740" y2="130" stroke="#64748b"/>
+      <line class="helix-rung rung6"  x1="726" y1="159" x2="754" y2="159" stroke="#64748b"/>
+      <line class="helix-rung rung7"  x1="714" y1="186" x2="766" y2="186" stroke="#64748b"/>
+      <line class="helix-rung rung8"  x1="716" y1="213" x2="764" y2="213" stroke="#64748b"/>
+      <line class="helix-rung rung9"  x1="726" y1="240" x2="754" y2="240" stroke="#64748b"/>
+      <line class="helix-rung rung10" x1="740" y1="265" x2="740" y2="265" stroke="#64748b"/>
+
+      <!-- Strand A nodes -->
+      <circle class="node-a1" cx="780" cy="75"  r="4" fill="#00c9a7"/>
+      <circle class="node-a2" cx="740" cy="130" r="4" fill="#00c9a7"/>
+      <circle class="node-a3" cx="780" cy="185" r="4" fill="#00c9a7"/>
+      <circle class="node-a4" cx="740" cy="240" r="4" fill="#00c9a7"/>
+      <circle class="node-a5" cx="780" cy="20"  r="3" fill="#00c9a7" opacity="0.5"/>
+
+      <!-- Strand B nodes -->
+      <circle class="node-b1" cx="700" cy="75"  r="3.5" fill="#f59e0b"/>
+      <circle class="node-b2" cx="740" cy="130" r="3.5" fill="#f59e0b"/>
+      <circle class="node-b3" cx="700" cy="185" r="3.5" fill="#f59e0b"/>
+      <circle class="node-b4" cx="740" cy="240" r="3.5" fill="#f59e0b"/>
+      <circle class="node-b5" cx="700" cy="20"  r="2.5" fill="#f59e0b" opacity="0.4"/>
+    </g>
+
+    <!-- Small molecule scatter (left of helix) -->
+    <g opacity="0.35">
+      <!-- Benzene ring-ish -->
+      <polygon points="640,90 654,82 668,90 668,106 654,114 640,106" stroke="#00c9a7" fill="none" stroke-width="1"/>
+      <circle cx="654" cy="98" r="5" stroke="#00c9a7" fill="none" stroke-width="0.8"/>
+      <!-- Random atoms -->
+      <circle cx="630" cy="170" r="4" stroke="#f59e0b" fill="none" stroke-width="1"/>
+      <line x1="630" y1="170" x2="650" y2="155" stroke="#64748b" stroke-width="0.8"/>
+      <circle cx="650" cy="155" r="3" stroke="#f59e0b" fill="none" stroke-width="1"/>
+      <line x1="630" y1="170" x2="614" y2="182" stroke="#64748b" stroke-width="0.8"/>
+      <circle cx="614" cy="182" r="3" stroke="#00c9a7" fill="none" stroke-width="1"/>
+
+      <!-- Extra scatter -->
+      <circle cx="595" cy="65" r="2.5" stroke="#00c9a7" fill="none" stroke-width="0.8"/>
+      <line x1="595" y1="65" x2="608" y2="50" stroke="#334155" stroke-width="0.8"/>
+      <circle cx="608" cy="50" r="2" stroke="#f59e0b" fill="none" stroke-width="0.8"/>
+    </g>
+
+    <!-- === TEXT CONTENT (left side) === -->
+    <!-- Top label -->
+    <g class="tags-group">
+      <rect x="48" y="30" width="130" height="18" rx="3" fill="#0f2435" stroke="#1e3a5f" stroke-width="0.8"/>
+      <text x="56" y="43" class="tag-text" fill="#00c9a7">PhD RESEARCHER</text>
+    </g>
+
+    <!-- Name -->
+    <g class="name-group">
+      <text x="48" y="115" class="name-text">Nadia</text>
+    </g>
+
+    <!-- Accent line under name -->
+    <line x1="48" y1="125" x2="248" y2="125" class="divider line1" stroke-dasharray="200" stroke-dashoffset="200"/>
+
+    <!-- Subtitle -->
+    <g class="title-group">
+      <text x="48" y="152" class="title-text">Molecular Biology &amp; Scientific Art</text>
+    </g>
+
+    <!-- Tags row -->
+    <g class="tags-group">
+      <!-- Tag 1 -->
+      <g class="tag1">
+        <rect x="48" y="175" width="138" height="22" rx="4" fill="#0f2435" stroke="#00c9a7" stroke-width="0.8" opacity="0.9"/>
+        <circle cx="60" cy="186" r="3" fill="#00c9a7"/>
+        <text x="70" y="190" class="tag-text" fill="#94a3b8">DIRECTED EVOLUTION</text>
+      </g>
+      <!-- Tag 2 -->
+      <g class="tag2">
+        <rect x="194" y="175" width="118" height="22" rx="4" fill="#0f2435" stroke="#f59e0b" stroke-width="0.8" opacity="0.9"/>
+        <circle cx="206" cy="186" r="3" fill="#f59e0b"/>
+        <text x="216" y="190" class="tag-text" fill="#94a3b8">PROTEIN ILLUSTRATION</text>
+      </g>
+      <!-- Tag 3 -->
+      <g class="tag3">
+        <rect x="48" y="204" width="158" height="22" rx="4" fill="#0f2435" stroke="#00c9a7" stroke-width="0.8" opacity="0.9"/>
+        <circle cx="60" cy="215" r="3" fill="#00c9a7"/>
+        <text x="70" y="219" class="tag-text" fill="#94a3b8">COMPUTATIONAL CHEMISTRY</text>
+      </g>
+    </g>
+
+    <!-- Bottom line -->
+    <g class="tags-group">
+      <text x="48" y="255" class="tag-text" fill="#334155">github.com/ND7996</text>
+      <circle cx="38" cy="251" r="2" fill="#00c9a7" opacity="0.6"/>
+    </g>
+
+    <!-- Scanline sweep (subtle) -->
+    <rect width="900" height="60" fill="url(#scanGrad)" opacity="0.5">
+      <animateTransform attributeName="transform" type="translate" from="0,-280" to="0,280" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
