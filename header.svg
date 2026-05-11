@@ -1,80 +1,17 @@
-<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" width="900" height="200">
-  <defs>
-    <style>
-      @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(10px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes grow {
-        from { stroke-dashoffset: 300; }
-        to   { stroke-dashoffset: 0; }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.4; }
-        50%       { opacity: 1; }
-      }
-      @keyframes helixFloat {
-        0%, 100% { transform: translateY(0); }
-        50%       { transform: translateY(-5px); }
-      }
+<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" width="900" height="160">
+<defs>
+<style>
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes drawLine{from{stroke-dashoffset:280}to{stroke-dashoffset:0}}
+.name{font-family:Georgia,'Times New Roman',serif;font-size:52px;fill:#f1f5f9;letter-spacing:4px;animation:fadeUp .8s ease .1s both}
+.role{font-family:Georgia,serif;font-size:14px;font-style:italic;fill:#64748b;letter-spacing:2.5px;animation:fadeUp .8s ease .4s both}
+.line{stroke:#00c9a7;stroke-width:.9;stroke-dasharray:280;stroke-dashoffset:280;animation:drawLine 1s ease .3s forwards}
+</style>
+</defs>
 
-      .name {
-        font-family: Georgia, 'Times New Roman', serif;
-        font-size: 48px;
-        fill: #f1f5f9;
-        letter-spacing: 4px;
-        animation: fadeUp 0.8s ease 0.1s both;
-      }
-      .sub {
-        font-family: Georgia, 'Times New Roman', serif;
-        font-size: 14px;
-        font-style: italic;
-        fill: #94a3b8;
-        letter-spacing: 2px;
-        animation: fadeUp 0.8s ease 0.4s both;
-      }
-      .line {
-        stroke: #00c9a7;
-        stroke-width: 1;
-        stroke-dasharray: 300;
-        stroke-dashoffset: 300;
-        animation: grow 1s ease 0.3s forwards;
-      }
-      .helix { animation: helixFloat 5s ease-in-out infinite; }
-      .dot-teal { fill: #00c9a7; animation: pulse 2.5s ease-in-out infinite; }
-      .dot-amber { fill: #f59e0b; animation: pulse 2.5s ease-in-out infinite 0.8s; }
-    </style>
-  </defs>
+<rect width="900" height="160" fill="#080c10" rx="10"/>
 
-  <!-- Background -->
-  <rect width="900" height="200" fill="#0d1117" rx="10"/>
-
-  <!-- Subtle corner marks -->
-  <g stroke="#1e3a5f" stroke-width="1" fill="none">
-    <path d="M14,26 L14,14 L26,14"/>
-    <path d="M874,14 L886,14 L886,26"/>
-    <path d="M14,174 L14,186 L26,186"/>
-    <path d="M874,186 L886,186 L886,174"/>
-  </g>
-
-  <!-- DNA helix (right, simple) -->
-  <g class="helix" transform="translate(760, 100)">
-    <path d="M-40,-80 C-20,-55 20,-55 40,-30 C60,-5 20,-5 0,20 C-20,45 20,45 40,70 C60,90 20,90 0,100" fill="none" stroke="#00c9a7" stroke-width="1.8" opacity="0.7"/>
-    <path d="M40,-80 C20,-55 -20,-55 -40,-30 C-60,-5 -20,-5 0,20 C20,45 -20,45 -40,70 C-60,90 -20,90 0,100" fill="none" stroke="#f59e0b" stroke-width="1.8" opacity="0.7"/>
-    <line x1="-14" y1="-57" x2="14" y2="-57" stroke="#334155" stroke-width="1"/>
-    <line x1="-32" y1="-30" x2="32" y2="-30" stroke="#334155" stroke-width="1"/>
-    <line x1="-14" y1="-3"  x2="14" y2="-3"  stroke="#334155" stroke-width="1"/>
-    <line x1="0"   y1="20"  x2="0"   y2="20"  stroke="#334155" stroke-width="1"/>
-    <line x1="-14" y1="46"  x2="14" y2="46"   stroke="#334155" stroke-width="1"/>
-    <line x1="-32" y1="70"  x2="32" y2="70"   stroke="#334155" stroke-width="1"/>
-    <circle class="dot-teal"  cx="40"  cy="-30" r="3.5"/>
-    <circle class="dot-teal"  cx="-40" cy="70"  r="3.5"/>
-    <circle class="dot-amber" cx="-40" cy="-30" r="3"/>
-    <circle class="dot-amber" cx="40"  cy="70"  r="3"/>
-  </g>
-
-  <!-- Text -->
-  <text x="70" y="105" class="name">Nayanika</text>
-  <line x1="70" y1="118" x2="340" y2="118" class="line"/>
-  <text x="70" y="143" class="sub">PhD · Enzymes · Proteins · Computational Chemistry</text>
+<text x="52" y="95" class="name">Nayanika</text>
+<line x1="52" y1="107" x2="332" y2="107" class="line"/>
+<text x="52" y="130" class="role">PhD Researcher · Computational Chemistry · Protein Illustration</text>
 </svg>
