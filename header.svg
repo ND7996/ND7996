@@ -1,17 +1,106 @@
-<svg viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg" width="900" height="160">
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" width="900" height="400">
 <defs>
 <style>
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@keyframes drawLine{from{stroke-dashoffset:280}to{stroke-dashoffset:0}}
-.name{font-family:Georgia,'Times New Roman',serif;font-size:52px;fill:#f1f5f9;letter-spacing:4px;animation:fadeUp .8s ease .1s both}
-.role{font-family:Georgia,serif;font-size:14px;font-style:italic;fill:#64748b;letter-spacing:2.5px;animation:fadeUp .8s ease .4s both}
-.line{stroke:#00c9a7;stroke-width:.9;stroke-dasharray:280;stroke-dashoffset:280;animation:drawLine 1s ease .3s forwards}
+@keyframes floatHelix{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes nodePulse{0%,100%{opacity:.25}50%{opacity:.9}}
+@keyframes nodePulseB{0%,100%{opacity:.2}50%{opacity:.75}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes drawLine{from{stroke-dashoffset:500}to{stroke-dashoffset:0}}
+.hx{animation:floatHelix 6s ease-in-out infinite}
+.na{animation:nodePulse 3s ease-in-out infinite}
+.nb{animation:nodePulseB 3s ease-in-out infinite .9s}
+.nc{animation:nodePulse 3s ease-in-out infinite 1.8s}
+.f1{animation:fadeIn .7s ease .1s both}
+.f2{animation:fadeIn .7s ease .3s both}
+.f3{animation:fadeIn .7s ease .5s both}
+.f4{animation:fadeIn .7s ease .7s both}
+.f5{animation:fadeIn .7s ease .9s both}
+.f6{animation:fadeIn .7s ease 1.1s both}
+.tl{stroke-dasharray:500;stroke-dashoffset:500;animation:drawLine 1.2s ease .2s forwards}
 </style>
 </defs>
 
-<rect width="900" height="160" fill="#080c10" rx="10"/>
+<!-- DNA helix top right -->
+<g class="hx" transform="translate(820,130)">
+  <path d="M-40,-110 C-18,-82 18,-82 40,-54 C62,-26 18,-26 0,2 C-18,30 18,30 40,58 C62,86 18,86 0,110" fill="none" stroke="#00c9a7" stroke-width="1.6" opacity=".5" stroke-linecap="round"/>
+  <path d="M40,-110 C18,-82 -18,-82 -40,-54 C-62,-26 -18,-26 0,2 C18,30 -18,30 -40,58 C-62,86 -18,86 0,110" fill="none" stroke="#f59e0b" stroke-width="1.6" opacity=".5" stroke-linecap="round"/>
+  <line x1="-16" y1="-82" x2="16"  y2="-82" stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <line x1="-34" y1="-54" x2="34"  y2="-54" stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <line x1="-16" y1="-26" x2="16"  y2="-26" stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <line x1="-34" y1="2"   x2="34"  y2="2"   stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <line x1="-16" y1="30"  x2="16"  y2="30"  stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <line x1="-34" y1="58"  x2="34"  y2="58"  stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <line x1="-16" y1="86"  x2="16"  y2="86"  stroke="#94a3b8" stroke-width="1" opacity=".3"/>
+  <circle class="na" cx="40"  cy="-54" r="3.5" fill="#00c9a7"/>
+  <circle class="nc" cx="0"   cy="2"   r="3.5" fill="#00c9a7"/>
+  <circle class="na" cx="40"  cy="58"  r="3.5" fill="#00c9a7"/>
+  <circle class="nb" cx="-40" cy="-54" r="3"   fill="#f59e0b"/>
+  <circle class="nb" cx="-40" cy="58"  r="3"   fill="#f59e0b"/>
+</g>
 
-<text x="52" y="95" class="name">Nayanika</text>
-<line x1="52" y1="107" x2="332" y2="107" class="line"/>
-<text x="52" y="130" class="role">PhD Researcher · Computational Chemistry · Protein Illustration</text>
+<!-- role -->
+<g class="f1">
+  <text x="52" y="62"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="20" font-style="italic"
+    fill="#64748b" letter-spacing="1">PhD Researcher</text>
+</g>
+
+<!-- divider line -->
+<line x1="52" y1="78" x2="420" y2="78" stroke="#00c9a7" stroke-width=".8" class="tl"/>
+
+<!-- bio -->
+<g class="f2">
+  <text x="52" y="115"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="15" fill="#374151" letter-spacing=".3">Hey! I'm a PhD student working at the intersection of computational</text>
+  <text x="52" y="136"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="15" fill="#374151" letter-spacing=".3">and theoretical chemistry, and scientific illustration.</text>
+</g>
+
+<!-- bullet 1 -->
+<g class="f3">
+  <text x="52" y="174" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#374151">🔬</text>
+  <text x="82" y="174" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#374151">
+    <tspan>Engineering enzymes through </tspan><tspan font-weight="bold">directed evolution</tspan>
+  </text>
+</g>
+
+<!-- bullet 2 -->
+<g class="f4">
+  <text x="52" y="204" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#374151">💻</text>
+  <text x="82" y="204" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#374151">
+    <tspan>Using </tspan><tspan font-weight="bold">molecular modelling</tspan><tspan> to guide experimental design</tspan>
+  </text>
+</g>
+
+<!-- bullet 3 -->
+<g class="f5">
+  <text x="52" y="234" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#374151">🎨</text>
+  <text x="82" y="234" font-family="Georgia,'Times New Roman',serif" font-size="15" fill="#374151">
+    <tspan>Turning protein structures into </tspan><tspan font-weight="bold">visual stories</tspan>
+  </text>
+</g>
+
+<!-- closing line -->
+<g class="f6">
+  <text x="52" y="278"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="14" font-style="italic" fill="#6b7280" letter-spacing=".3">I care a lot about making science legible — to researchers, and to everyone else.</text>
+</g>
+
+<!-- bottom divider -->
+<line x1="52" y1="306" x2="848" y2="306" stroke="#e2e8f0" stroke-width=".8"/>
+
+<!-- small molecule scatter bottom right -->
+<g opacity=".2">
+  <polygon points="800,330 812,323 824,330 824,344 812,351 800,344" stroke="#00c9a7" fill="none" stroke-width=".9"/>
+  <circle cx="812" cy="337" r="3.5" stroke="#00c9a7" fill="none" stroke-width=".7"/>
+  <circle cx="848" cy="368" r="3" stroke="#f59e0b" fill="none" stroke-width=".9"/>
+  <line x1="848" y1="368" x2="833" y2="356" stroke="#94a3b8" stroke-width=".8"/>
+  <circle cx="833" cy="356" r="2" stroke="#00c9a7" fill="none" stroke-width=".8"/>
+  <line x1="848" y1="368" x2="863" y2="358" stroke="#94a3b8" stroke-width=".8"/>
+  <circle cx="863" cy="358" r="2" stroke="#f59e0b" fill="none" stroke-width=".8"/>
+</g>
 </svg>
