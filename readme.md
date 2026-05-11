@@ -1,20 +1,8 @@
 <div align="center">
-  <img src="header.svg" width="100%" alt="Nayanika"/>
+  <img src="header.svg" width="100%" alt="Nayanika — PhD Researcher"/>
 </div>
 
 <br/>
-
-Hey! I'm a PhD student working at the intersection of computational and theoretical chemistry, and scientific illustration.
-
-- 🔬 &nbsp;Engineering enzymes through **directed evolution**
-- 💻 &nbsp;Using **molecular modelling** to guide experimental design
-- 🎨 &nbsp;Turning protein structures into **visual stories**
-
-I care a lot about making science legible — to researchers, and to everyone else.
-
-<br/>
-
----
 
 <div align="center">
 
