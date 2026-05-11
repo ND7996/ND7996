@@ -16,16 +16,12 @@ I care a lot about making science legible — to researchers, and to everyone el
 
 ---
 
-**Tools I use**
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-0d1117?style=flat&logo=python&logoColor=00c9a7)
-![R](https://img.shields.io/badge/R-0d1117?style=flat&logo=r&logoColor=00c9a7)
-![Blender](https://img.shields.io/badge/Blender-0d1117?style=flat&logo=blender&logoColor=f59e0b)
-![Inkscape](https://img.shields.io/badge/Inkscape-0d1117?style=flat&logo=inkscape&logoColor=00c9a7)
+[![Linktree](https://img.shields.io/badge/More%20about%20me-Linktree-0d1117?style=flat&logo=linktree&logoColor=00c9a7)](https://linktr.ee/nd_7)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat&logo=linkedin&logoColor=00c9a7)](https://www.linkedin.com/in/nayanika-das-2ba863113/)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-0d1117?style=flat&logo=gmail&logoColor=f59e0b)](mailto:nayanikadas0709@gmail.com)
 
----
-
-**Find me**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0d1117?style=flat&logo=linkedin&logoColor=00c9a7)](https://www.linkedin.com/in/ND7996)
-[![Email](https://img.shields.io/badge/Email-0d1117?style=flat&logo=gmail&logoColor=f59e0b)](mailto:your@email.com)
+</div>
