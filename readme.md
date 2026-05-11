@@ -1,61 +1,118 @@
 <div align="center">
 
-# 👩‍🔬 Nadia · PhD Researcher
+<img src="header.svg" alt="Nadia — PhD Researcher" width="100%"/>
 
-**Directed Evolution of Enzymes · Protein Illustration · Computational Chemistry**
+</div>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ND7996)
-[![GitHub followers](https://img.shields.io/github/followers/ND7996?style=flat&logo=github&logoColor=white&color=181717)](https://github.com/ND7996)
+<br/>
+
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&size=22&pause=1200&color=00C9A7&center=true&vCenter=true&width=600&lines=Engineering+enzymes+beyond+nature%27s+limits...;Painting+proteins+one+residue+at+a+time...;Where+biology+meets+computational+design...)](https://github.com/ND7996)
+
+</div>
+
+<br/>
+
+---
+
+<table>
+<tr>
+<td width="55%" valign="top">
+
+### `> about_me.json`
+
+```json
+{
+  "role": "PhD Student",
+  "focus": [
+    "Directed Evolution of Enzymes",
+    "Protein Structure & Illustration",
+    "Computational Chemistry"
+  ],
+  "passion": "Making the invisible world of
+              proteins visible and exciting",
+  "approach": "Wet lab ↔ Computation ↔ Art",
+  "open_to": ["Collaborations", "Outreach"]
+}
+```
+
+</td>
+<td width="45%" valign="top">
+
+### `> research_pipeline`
+
+```
+🧬  Library Design
+        │
+        ▼
+🔬  High-Throughput Screening
+        │
+        ▼
+💻  Computational Modelling
+        │
+        ▼
+🎨  Data Visualisation & Illustration
+        │
+        ▼
+🗣️  Science Communication
+```
+
+</td>
+</tr>
+</table>
+
+---
+
+### `> tools_and_tech`
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-0a0e12?style=for-the-badge&logo=python&logoColor=00C9A7)
+![R](https://img.shields.io/badge/R-0a0e12?style=for-the-badge&logo=r&logoColor=00C9A7)
+![Blender](https://img.shields.io/badge/Blender-0a0e12?style=for-the-badge&logo=blender&logoColor=f59e0b)
+![Inkscape](https://img.shields.io/badge/Inkscape-0a0e12?style=for-the-badge&logo=inkscape&logoColor=00C9A7)
+![PyMOL](https://img.shields.io/badge/PyMOL-0a0e12?style=for-the-badge&logoColor=f59e0b&color=0a0e12)
+![GROMACS](https://img.shields.io/badge/GROMACS-0a0e12?style=for-the-badge&logoColor=00C9A7)
+![AutoDock](https://img.shields.io/badge/AutoDock-0a0e12?style=for-the-badge&logoColor=f59e0b)
+![ChimeraX](https://img.shields.io/badge/ChimeraX-0a0e12?style=for-the-badge&logoColor=00C9A7)
 
 </div>
 
 ---
 
-## About Me
+### `> github_stats`
 
-I'm a PhD student at the crossroads of **molecular biology**, **computational chemistry**, and **scientific communication**. My work focuses on engineering enzymes through directed evolution — pushing proteins beyond their natural limits to unlock new functions.
+<div align="center">
 
-- 🔬 **Directed Evolution** — designing and screening enzyme variants for improved activity, stability, or selectivity
-- 💻 **Computational Chemistry** — molecular modelling, docking, and MD simulations to guide experimental design
-- 🎨 **Protein Illustration** — turning complex 3D structures into clear, compelling visual stories
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=ND7996&show_icons=true&theme=transparent&hide_border=true&title_color=00c9a7&icon_color=f59e0b&text_color=94a3b8&bg_color=0a0e12" />
+&nbsp;&nbsp;
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ND7996&layout=compact&theme=transparent&hide_border=true&title_color=00c9a7&text_color=94a3b8&bg_color=0a0e12" />
 
----
-
-## What I Do
-
-```
-Wet lab  ──▶  Sequence space exploration  ──▶  Variant screening
-                        ▲                              │
-                        │                              ▼
-              Computational modelling  ◀──  Data analysis & visualisation
-```
-
-I believe that great science needs great communication. I translate structural biology data into illustrations that resonate with both expert and general audiences — making the invisible world of proteins visible and exciting.
+</div>
 
 ---
 
-## Tools & Languages
+### `> connect`
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyMOL](https://img.shields.io/badge/PyMOL-red?style=flat)
-![GROMACS](https://img.shields.io/badge/GROMACS-0096D6?style=flat)
-![AutoDock](https://img.shields.io/badge/AutoDock-005C84?style=flat)
-![Inkscape](https://img.shields.io/badge/Inkscape-000000?style=flat&logo=inkscape&logoColor=white)
-![Blender](https://img.shields.io/badge/Blender-E87D0D?style=flat&logo=blender&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=flat&logo=r&logoColor=white)
+<div align="center">
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a0e12?style=for-the-badge&logo=linkedin&logoColor=00C9A7)](https://www.linkedin.com/in/ND7996)
+[![Email](https://img.shields.io/badge/Email-0a0e12?style=for-the-badge&logo=gmail&logoColor=f59e0b)](mailto:your@email.com)
+[![GitHub](https://img.shields.io/badge/GitHub-0a0e12?style=for-the-badge&logo=github&logoColor=00C9A7)](https://github.com/ND7996)
 
-## Let's Connect
+<br/>
 
-I'm always happy to talk about enzyme engineering, protein visualisation, or the art of making science accessible.
+![Profile views](https://komarev.com/ghpvc/?username=ND7996&style=flat&color=00c9a7&label=profile+views)
 
-> *"The most exciting phrase to hear in science is not 'Eureka!' but 'That's funny…'"* — Isaac Asimov
+<br/>
 
-📬 Feel free to open an issue, drop a star, or reach out if you'd like to collaborate!
+*"The most exciting phrase to hear in science is not 'Eureka!' but 'That's funny…'"*
+
+</div>
 
 ---
 
 <div align="center">
-  <sub>Made with curiosity & caffeine ☕</sub>
+  <sub><code>// crafted with curiosity & caffeine · ND7996</code></sub>
 </div>
